@@ -63,23 +63,32 @@ ggplotly(g)
 
 names(get_brmap("State"))
 
-codigos <- structure(list(codigo = c(11L, 12L, 13L, 14L, 15L, 16L, 17L, 
-                                     21L, 22L, 23L, 24L, 25L, 26L, 27L, 28L, 29L, 31L, 32L, 33L, 35L, 
-                                     41L, 42L, 43L, 50L, 51L, 52L, 53L), estado = structure(c(22L, 
-                                                                                              1L, 4L, 23L, 14L, 3L, 27L, 10L, 18L, 6L, 20L, 15L, 17L, 2L, 26L, 
-                                                                                              5L, 13L, 8L, 19L, 25L, 16L, 24L, 21L, 12L, 11L, 9L, 7L), .Label = c("Acre", 
-                                                                                                                                                                  "Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará", "Distrito Federal", 
-                                                                                                                                                                  "Espírito Santo", "Goiás", "Maranhão", "Mato Grosso", "Mato Grosso do Sul", 
-                                                                                                                                                                  "Minas Gerais", "Pará", "Paraíba", "Paraná", "Pernambuco", 
-                                                                                                                                                                  "Piauí", "Rio de Janeiro", "Rio Grande do Norte", "Rio Grande do Sul", 
-                                                                                                                                                                  "Rondônia", "Roraima", "Santa Catarina", "São Paulo", "Sergipe", 
-                                                                                                                                                                  "Tocantins"), class = "factor"), uf = structure(c(21L, 1L, 3L, 
-                                                                                                                                                                                                                    22L, 14L, 4L, 27L, 10L, 17L, 6L, 20L, 15L, 16L, 2L, 25L, 5L, 
-                                                                                                                                                                                                                    11L, 8L, 19L, 26L, 18L, 24L, 23L, 12L, 13L, 9L, 7L), .Label = c("AC", 
-                                                                                                                                                                                                                                                                                    "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", "MS", 
-                                                                                                                                                                                                                                                                                    "MT", "PA", "PB", "PE", "PI", "PR", "RJ", "RN", "RO", "RR", "RS", 
-                                                                                                                                                                                                                                                                                    "SC", "SE", "SP", "TO"), class = "factor")), class = "data.frame", row.names = c(NA, 
-                                                                                                                                                                                                                                                                                                                                                                     -27L))
+codigos <- structure(
+  list(codigo = c(11L, 12L, 13L, 14L, 15L, 16L, 17L, 
+                  21L, 22L, 23L, 24L, 25L, 26L, 27L, 
+                  28L, 29L, 31L, 32L, 33L, 35L, 
+                  41L, 42L, 43L, 50L, 51L, 52L, 53L), 
+       estado = structure(c(22L, 1L, 4L, 23L, 14L, 3L, 
+                            27L, 10L, 18L, 6L, 20L, 15L, 17L, 2L, 26L, 
+                            5L, 13L, 8L, 19L, 25L, 16L, 24L, 21L, 12L, 
+                            11L, 9L, 7L), 
+                          .Label = c("Acre", "Alagoas", "Amapá", "Amazonas", "Bahia", 
+                                     "Ceará", "Distrito Federal", "Espírito Santo", 
+                                     "Goiás", "Maranhão", "Mato Grosso", 
+                                     "Mato Grosso do Sul", "Minas Gerais", "Pará", 
+                                     "Paraíba", "Paraná", "Pernambuco", 
+                                     "Piauí", "Rio de Janeiro", "Rio Grande do Norte", 
+                                     "Rio Grande do Sul", "Rondônia", "Roraima", 
+                                     "Santa Catarina", "São Paulo", "Sergipe", 
+                                     "Tocantins"), class = "factor"), 
+       uf = structure(c(21L, 1L, 3L, 22L, 14L, 4L, 27L, 10L, 
+                        17L, 6L, 20L, 15L, 16L, 2L, 25L, 5L, 
+                        11L, 8L, 19L, 26L, 18L, 24L, 23L, 12L, 13L, 9L, 7L), 
+                      .Label = c("AC", "AL", "AM", "AP", "BA", "CE", "DF", 
+                                 "ES", "GO", "MA", "MG", "MS", "MT", "PA", "PB", 
+                                 "PE", "PI", "PR", "RJ", "RN", "RO", "RR", "RS", 
+                                 "SC", "SE", "SP", "TO"), class = "factor")), 
+  class = "data.frame", row.names = c(NA, -27L))
 
 mapa_br <- get_brmap("State")
 
